@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Put all your incomes and exponse in one place"
+    />
+    <meta name="keywords" content="wallet, calculator, expanse, income" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Expanse Calculator</title>
+    <script
+      src="https://kit.fontawesome.com/c62122af98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="title">
+        <h1 class="title__header"><i class="fas fa-wallet"></i>Wallet</h1>
+        <p class="title__description">Your personal finance menager</p>
+      </header>
+      <main class="app">
+        <section class="app__transactions transactions">
+          <h2 class="transactions__header">Transactions List</h2>
+          <div class="transactions__list list">
+            <div class="list__income">
+              <h3 class="list__income__title">Income</h3>
+
+            </div>
+            <div class="list__expanse">
+              <h3 class="list__expanse__title">Expanse</h3>
+            </div>
+          </div>
+        </section>
+        <section class="app__resume options">
+            <div class="options__actual">
+                <h2 class="options__actual__title">Available money:</h2>
+                <p class="options__actual__available-money">0zł</p>
+            </div>
+            <div class="options__controls">
+                <button class="btn btn--add-transaction"><i class="fas fa-plus"></i> Add transactin</button>
+                <button class="btn btn--delete-all"><i class="far fa-trash-alt"></i> Delete all</button>
+            </div>
+            <div class="options__style-selection">
+                <h2 class="options__style-selection__title">Select style:</h2>
+                <div class="options__style-selection__color-buttons">
+                    <button class="btn btn--light"></button>
+                    <button class="btn btn--dark"></button>
+                </div>
+            </div>
+        </section>
+      </main>
+      <div class="add-transaction-panel">
+          <h2 class="add-transaction-panel__title">Add new transaction</h2>
+        <label for="name">Name:</label>
+        <small>(write transaction name)</small>
+        <input type="text" id="name"></input>
+
+        <label for="amount">Amount:</label>
+        <small>(Add amount if it is a expanse put before the amount minus) </small>
+        <input type="number" id="amount">
+
+        <label for="category">Choose category:</label>
+        <small>( [ + ] income, [ - ] expanse)</small>
+        <select id="category" onchange="selectCategory()">
+            <option value="none" selected disabled></option>
+            <option value="income">[ + ] Income</option>
+            <option value="shopping">[ - ] Home staffs</option>
+            <option value="food">[ - ] Food</option>
+            <option value="cinema">[ - ] Relax</option>
+        </select>
+
+        <div class="add-transaction-panel__panel-buttons">
+            <button class="btn btn--save"><i class="fas fa-save"></i> Save</button>
+            <button class="btn btn--cancel"><i class="far fa-window-close"></i> Cancel</button>
+        </div></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

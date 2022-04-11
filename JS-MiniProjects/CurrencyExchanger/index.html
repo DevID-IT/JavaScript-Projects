@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Check how much money you can get if you exchange money from another cuurency"
+    />
+    <meta name="keywords" content="exchange, currency, exchange currency" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Currency Exchenger</title>
+    <script
+      src="https://kit.fontawesome.com/c62122af98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="title">
+        <img class="title__img" src="icon/exchange.svg" alt="Logo" />
+        <h1 class="title__main-text">Simple Currency Converter</h1>
+        <p class="title__text">
+          Choose the currency and the amounts to get the exchange rate
+        </p>
+      </header>
+      <main class="exchanger">
+        <div class="exchanger__from">
+          <label class="exchanger__label" for="from">FROM</label>
+          <select class="currency_select" name="from" id="from">
+            <option value="USD">USD</option>
+          </select>
+          <input
+            class="exchanger__value"
+            type="number"
+            id="from-input"
+            placeholder="Enter currency"
+          />
+        </div>
+        <div class="exchanger__icon">
+          <a href="#" class="exchanger__icon__anchor"
+            ><i class="fas fa-exchange-alt"></i
+          ></a>
+        </div>
+        <div class="exchanger__to">
+          <label class="exchanger__label" for="to">TO</label>
+          <select class="currency_select" name="to" id="to">
+            <option value="USD">USD</option>
+          </select>
+          <input
+            class="exchanger__value"
+            type="number"
+            id="to-input"
+            placeholder="Conversion Rate"
+            value=""
+            disabled
+          />
+        </div>
+      </main>
+      <div class="exchange_value">
+        <p class="exchange_value__result">1.00 USD = 1.00 USD</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

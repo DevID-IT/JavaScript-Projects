@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Count time to your nearest event" />
+    <meta name="keywords" content="time, counter, time counter, slider" />
+    <title>Time counter</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c62122af98.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slider__dots">
+        <span id="one" class="active slider__dot"></span>
+        <span id="two" class="slider__dot"></span>
+        <span id="three" class="slider__dot"></span>
+        <span id="four" class="slider__dot"></span>
+      </div>
+    </div>
+    <div class="counter-app">
+      <div class="settings">
+        <h1 class="settings__title">Settings</h1>
+        <div class="settings__form">
+          <label for="event-name">Event name</label>
+          <input
+            type="text"
+            id="event-name"
+            class="settings__input"
+            value="New Year"
+          />
+          <table class="settings__date">
+            <tr>
+              <td><label for="event-day">Day:</label></td>
+              <td><label for="event-month">Month:</label></td>
+              <td><label for="event-year">Year:</label></td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="number"
+                  class="settings__input"
+                  id="event-day"
+                  maxlength="2"
+                  value="31"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  class="settings__input"
+                  id="event-month"
+                  maxlength="2"
+                  value="12"
+                />
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="event-year"
+                  maxlength="4"
+                  value="2021"
+                  class="settings__input"
+                />
+              </td>
+            </tr>
+          </table>
+          <label for="event-image">Link to image:</label>
+          <input type="text" id="event-image" class="settings__input" />
+          <button class="settings__btn-save">Save</button>
+          <button class="settings__btn-cancel">Cancel</button>
+        </div>
+      </div>
+      <main class="app-main">
+        <div class="app-main__settings-btn">
+          <i class="fas fa-sliders-h"></i>
+        </div>
+        <div class="app-main__time">
+          <h3 class="app-main__title">
+            <span class="event">New Year</span> for:
+          </h3>
+          <div class="app-main__time-cards">
+            <div class="card">
+              <p class="card__days-count number">0</p>
+              <p class="card__title">Days</p>
+            </div>
+            <div class="card">
+              <p class="card__hours-count number">00</p>
+              <p class="card__title">Hours</p>
+            </div>
+            <div class="card">
+              <p class="card__minutes-count number">00</p>
+              <p class="card__title">Minutes</p>
+            </div>
+            <div class="card">
+              <p class="card__seconds-count number">00</p>
+              <p class="card__title">Seconds</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

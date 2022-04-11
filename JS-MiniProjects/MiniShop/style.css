@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containter {
+    width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+}
+
+header {
+    position: relative;
+    height: 360px;
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/22/17/16/shopping-1761230_1280.jpg');
+    background-size: cover;
+    z-index: 0;
+}
+
+.basket {
+    position: absolute;
+    display: none;
+    top: 5px;
+    right: 5px;
+    width: 300px;
+    text-align: center;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.863);
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    overflow: auto; 
+    height: 250px; 
+}
+
+.basket span{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    right: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0.8;
+    box-shadow: 0 0 2px #000;
+}
+
+.basket button{
+    padding: 5px;
+    width: 90%;
+    font-size: 16px;
+    background-color: green;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: sticky;
+    top: 200px;
+
+}
+
+.basket_elements {
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.site_header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    padding: 20px 40px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.search {
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    box-sizing: border-box;
+}
+
+nav ul li {
+    padding: 10px;
+
+}
+nav ul li:nth-child(2n) {
+    background-color: rgb(170, 170, 170);
+}
+
+nav ul li:nth-child(2n):hover {
+    background-color: rgb(170, 170, 170);
+}
+
+nav ul li:hover {
+    transform: scale(1.05);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+}
+
+main {
+    padding: 10px 20px;
+}
+
+h2 {
+    padding: 20px 0;
+}
+
+main ul {
+    padding-bottom: 30px;
+    font-size: 23px;
+    list-style: none;
+}
+
+main li {
+    padding: 8px 30px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+main li:last-child {
+    border-bottom: 0;
+}
+
+/*Products list */
+.product_description {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.elements {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    line-height: 40px;
+}
+
+.elements:first-letter {
+    text-transform: uppercase;
+}
+
+span {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    right: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0.8;
+    box-shadow: 0 0 2px #000;
+}
+
+span:hover {
+    opacity: 1;
+}
+
+.elements {
+    display: block;
+}

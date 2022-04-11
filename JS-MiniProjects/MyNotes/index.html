@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Notes</title>
+    <meta
+      name="description"
+      content="My Notes is the best place to keep all your toughts"
+    />
+    <meta name="keywords" content="My Notes, notes, toughts, save place" />
+    <meta name="author" content="Dawid Kuczkowicz" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="menu">
+        <h1 class="logo"><i class="fas fa-sticky-note"></i>My Notes</h1>
+        <div class="menu__buttons">
+          <button class="button button--add">
+            <i class="fas fa-plus"></i>
+            Add</button
+          ><button class="button button--delete-all">
+            <i class="fas fa-trash"></i>
+            Delete all
+          </button>
+        </div>
+      </header>
+      <section class="notes-area"></section>
+      <div class="note-panel">
+        <h2 class="note-panel__title">Add note</h2>
+        <div class="note-panel__inputs">
+          <label for="category">Choose category</label>
+          <div class="note-panel__inputs--add-category">
+            <input
+              type="text"
+              class="newCategory"
+              placeholder="Write your category"
+            />
+            <button class="button button--save-category">
+              <i class="fas fa-file-alt"></i>Save category
+            </button>
+          </div>
+          <div class="note-panel__inputs--categories">
+            <select name="categories" id="category" onchange="selectValue()">
+              <option value="0" disabled selected>- Choose category -</option>
+              <option value="1">Home</option>
+              <option value="2">Work</option>
+              <option value="3">Others</option>
+            </select>
+            <button class="button button--add-category">
+              <i class="fas fa-file-alt"></i>Add category
+            </button>
+          </div>
+          <div class="note-panel__inputs--description">
+            <label for="note-description">Write note description</label>
+            <textarea type="text" id="note-description" /></textarea>
+            <label for="date">Deadline</label>
+            <input type="date" id="date" />
+            <p class="note-panel__inputs__error">Fill in all fields</p>
+          </div>
+        </div>
+        <div class="note-panel__buttons">
+          <button class="button button--save">
+            <i class="fas fa-save"></i>Save
+          </button>
+          <button class="button button--cancel">
+            <i class="fas fa-window-close"></i>Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c62122af98.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

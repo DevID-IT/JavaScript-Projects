@@ -1,0 +1,208 @@
+$firstColor: rgb(255, 243, 0);
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  flex-basis: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lighten(rgb(128, 123, 123), 40%);
+  & .logo {
+    padding-left: 40px;
+    letter-spacing: 1px;
+    @media (max-width: 640px) {
+      padding: 0;
+      margin-bottom: 10px;
+    }
+  }
+  &__buttons {
+    padding-right: 40px;
+    @media (max-width: 640px) {
+      padding: 0;
+    }
+  }
+  @media (max-width: 640px) {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.button {
+  padding: 12px 25px;
+  background: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  &--add {
+    margin-right: 15px;
+  }
+  &:hover {
+    background-color: #333;
+    color: #ddd;
+  }
+
+  &--cancel {
+    margin-left: 10px;
+  }
+  &--add-category,
+  &--save,
+  &--cancel {
+    @media (max-width: 640px) {
+      background-color: #fff;
+    }
+  }
+  &--add-category {
+    @media (max-width: 640px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.notes-area {
+  flex-basis: 90%;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 20px;
+  @media (max-width: 640px) {
+    flex-basis: 100%;
+    padding: 0;
+  }
+}
+.fas {
+  margin-right: 10px;
+}
+.note {
+  margin: 20px 20px;
+  width: 240px;
+  background-color: $firstColor;
+  border: 1px solid black;
+  @media (max-width: 640px) {
+    border: none;
+    &::after {
+      content: "";
+      border-bottom: 3px solid black;
+      width: 100%;
+      display: block;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.06);
+    @media (max-width: 640px) {
+      justify-content: space-between;
+      padding: 10px 30px;
+    }
+    & .button--delete {
+      background: none;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &__description {
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+  @media (max-width: 640px) {
+    margin: 0;
+    flex-basis: 100%;
+  }
+}
+.note-panel {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 20px;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  text-align: center;
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 184, 184);
+    opacity: 0.99;
+  }
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__inputs {
+    display: block;
+  }
+
+  & #category,
+  #note-description,
+  #date,
+  .newCategory {
+    margin: 20px 0;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 90%;
+    max-height: 60%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  & #note-description {
+    height: 100px;
+  }
+  & #date {
+    width: 50%;
+    margin-left: 155px;
+    @media (max-width: 640px) {
+      display: inline-block;
+      width: 100%;
+      margin: 20px 0 0 0;
+    }
+  }
+  &__inputs {
+    &__error {
+      margin-bottom: 20px;
+      color: red;
+      visibility: hidden;
+    }
+    &--categories {
+      width: 100%;
+      & #category {
+        display: inline-block;
+        width: 60%;
+        margin-right: 5px;
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+      }
+    }
+    &--add-category {
+      display: none;
+      width: 100%;
+    }
+  }
+}

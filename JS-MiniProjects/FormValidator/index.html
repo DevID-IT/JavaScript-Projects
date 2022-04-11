@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Validator</title>
+        <meta name="description" content="Rock Paper Scissors game is very atractive for free time">
+        <meta name="keywords" content="Rock, Paper, Scissors, Rock Paper Scissors, game, free tim">
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="style.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form>
+                <div class="register-form">
+                    <h1>Register Form</h1>
+                    <div class="form-box">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter a username">
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="form-box">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="form-box">
+                        <label for="password2">Password:</label>
+                        <input type="password" id="password2" placeholder="Repeat the password">
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="form-box">
+                        <label for="email">E-mail address:</label>
+                        <input type="email" id="email" placeholder="Enter e-mail address">
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="clear">Clear</button>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+                <div class="information-form">
+                    <h1>More Information</h1>
+                    <div class="inform-box">
+                        <label for='sex'>Your sex:</label>
+                        <select name="cities" id="sex">
+                            <option value="" disabled selected="selected">--Please choose an option--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="inform-box">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" placeholder="Enter your age">
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="inform-box">
+                        <label for='city'>Which city is closest to you?</label>
+                        <select name="cities" id="city">
+                            <option value="" disabled selected="selected">--Please choose an option--</option>
+                            <option value="Cracow">Cracow</option>
+                            <option value="Warsaw">Warsaw</option>
+                            <option value="Wroclaw">Wroclaw</option>
+                            <option value="Kielce">Kielce</option>
+                            <option value="Rzeszow">Rzeszow</option>
+                            <option value="Gdansk">Gdansk</option>
+                            <option value="Torun">Torun</option>
+                            <option value="Lodz">Lodz</option>
+                            <option value="Szczecin">Szczecin</option>
+                            <option value="Poznan">Poznan</option>
+                            <option value="Sopot">Sopot</option>
+                            <option value="Gdynia">Gdynia</option>
+                        </select>
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="inform-box">
+                        <label for="profession">Profession:</label>
+                        <input type="text" id="proffesion" placeholder="Enter your proffesion">
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="clear">Clear</button>
+                        <button class="send">Send</button>
+                    </div>
+                </div>
+            </form>
+            <div class="popup">
+                <p>Form is full fill! Congratulation!</p>
+                <button class="close">Next step</button>
+            </div>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>

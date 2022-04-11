@@ -1,0 +1,280 @@
+{
+    "bread": [{
+        "name": "bread",
+        "price": 2
+    }, {
+        "name": "roll",
+        "price": 2
+    }, {
+        "name": "wheat roll",
+        "price": 2
+    }, {
+        "name": "corn roll",
+        "price": 2
+    }, {
+        "name": "wheat bread",
+        "price": 2
+    }, {
+        "name": "wholemeal bread",
+        "price": 2
+    }, {
+        "name": "lightweight bread",
+        "price": 2
+    }, {
+        "name": "doughnut",
+        "price": 2
+    }, {
+        "name": "corner",
+        "price": 2
+    }, {
+        "name": "yeast",
+        "price": 2
+    }],
+    "drinks": [{
+        "name": "orange juice",
+        "price": 2
+    }, {
+        "name": "apple juice",
+        "price": 2
+    }, {
+        "name": "lemon juice",
+        "price": 2
+    }, {
+        "name": "coffee 1kg",
+        "price": 2
+    }, {
+        "name": "box of tea",
+        "price": 2
+    }, {
+        "name": "energy drink",
+        "price": 2
+    }, {
+        "name": "carbonated water",
+        "price": 2
+    }, {
+        "name": "still water",
+        "price": 2
+    }, {
+        "name": "coca-cola",
+        "price": 2
+    }, {
+        "name": "milk",
+        "price": 2
+    }],
+    "snacks": [{
+        "name": "chips",
+        "price": 2
+    }, {
+        "name": "sticks",
+        "price": 2
+    }, {
+        "name": "crackers",
+        "price": 2
+    }, {
+        "name": "rice waffles",
+        "price": 2
+    }, {
+        "name": "peanuts",
+        "price": 2
+    }, {
+       "name": "corn crisps",
+       "price": 2
+    } , {
+        "name": "lay's chips",
+        "price": 2
+    }],
+    "sweets": [ {
+        "name": "Jellyfish",
+        "price": 2
+    }, {
+        "name": "marshmello",
+        "price": 2
+    }, {
+        "name": "bar of mars",
+        "price": 2
+    }, {
+        "name": "bar of snickers",
+        "price": 2
+    }, {
+        "name": "bar of chocolate",
+        "price": 2
+    }, {
+        "name": "chocolate box",
+        "price": 2
+    }, {
+        "name": "lollipop",
+        "price": 2
+    }, {
+        "name": "teasers",
+        "price": 2
+    }, {
+        "name": "Cookies",
+        "price": 2
+    }],
+    "dairy products": [{
+        "name": "milk",
+        "price": 2
+    }, {
+        "name": "white cheese",
+        "price": 2
+    }, {
+        "name": "cheese",
+        "price": 2
+    }, {
+        "name": "yoghurt",
+        "price": 2
+    }, {
+        "name": "cream",
+        "price": 2
+    }, {
+        "name": "cottage cheese",
+        "price": 2
+    }, {
+        "name": "rennet cheese",
+        "price": 2
+    }, {
+        "name": "kefir",
+        "price": 2
+    }],
+    "alcohol": [{
+        "name": "Drinking honey",
+        "price": 2
+    }, {
+        "name": "Tincture",
+        "price": 2
+    }, {
+        "name": "Ouzo",
+        "price": 2
+    }, {
+        "name": "Beer ",
+        "price": 2
+    }, {
+        "name": "Sake",
+        "price": 2
+    }, {
+        "name": "Rum",
+        "price": 2
+    }, {
+        "name": "Spirits",
+        "price": 2
+    }, {
+        "name": "liqueur",
+        "price": 2
+    }, {
+        "name": "Vodka",
+        "price": 2
+    }, {
+        "name": "Wine",
+        "price": 2
+    }, {
+        "name": "whisky",
+        "price": 2
+    }, {
+        "name": "Cognac",
+        "price": 2
+    }],
+    "fruits": [{
+        "name": "Apple",
+        "price": 2
+    }, {
+        "name": "Apricot",
+        "price": 2
+    }, {
+        "name": "Avocado",
+        "price": 2
+    }, {
+        "name": "Banana",
+        "price": 2
+    }, {
+        "name": "Cantaloupe",
+        "price": 2
+    }, {
+        "name": "Blackberries ",
+        "price": 2
+    }, {
+        "name": "Cherries",
+        "price": 2
+    }, {
+        "name": "Grapefruit",
+        "price": 2
+    }, {
+        "name": "Grapes",
+        "price": 2
+    }, {
+        "name": "Guava",
+        "price": 2
+    }, {
+        "name": "Kiwi",
+        "price": 2
+    }, {
+        "name": "Lemons",
+        "price": 2
+    }, {
+        "name": "Mango",
+        "price": 2
+    }, {
+        "name": "Oranges ",
+        "price": 2
+    }, {
+        "name": "Papaya ",
+        "price": 2
+    }, {
+        "name": "Peach ",
+        "price": 2
+    }],
+    "vegetables": [{
+        "name": "arugula",
+        "price": 2
+    }, {
+        "name": "beet",
+        "price": 2
+    }, {
+        "name": "bell pepper",
+        "price": 2
+    }, {
+        "name": "celery",
+        "price": 2
+    }, {
+        "name": "corn",
+        "price": 2
+    }, {
+        "name": "cucumber",
+        "price": 2
+    }, {
+        "name": "mushrooms",
+        "price": 2
+    }, {
+        "name": "radish",
+        "price": 2
+    }, {
+        "name": "spinach",
+        "price": 2
+    }, {
+        "name": "tomato",
+        "price": 2
+    }, {
+        "name": "aubergine",
+        "price": 2
+    }, {
+        "name": "cauliflower",
+        "price": 2
+    }, {
+        "name": "courgette",
+        "price": 2
+    }, {
+        "name": "broccoli",
+        "price": 2
+    }, {
+        "name": "onion",
+        "price": 2
+    }, {
+        "name": "carrot",
+        "price": 2
+    }, {
+        "name": "potatoes",
+        "price": 2
+    }, {
+        "name": "zucchini",
+        "price": 2
+    }]    
+}
